@@ -1,0 +1,52 @@
+<div class="row contener-atm">
+    <div class="col-4"></div>
+    <div class="col-lg-4 col-lg-offset-4">
+        <span class="text-atm">BALANCE DE TARJETA</span>
+        <div class="row td-tarjeta">
+            <div class="col-12 cont-banco">
+                <span class="text-tarjeta">BANCO INTERNACIONAL</span>
+            </div>
+            <div class="col-12 cont-chip">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-responsive" src="assets/chip.png">
+                        <img class="img-responsive wifi" src="assets/wifi.png">
+                    </div>
+                    <div class="col-6 cont-monto">
+                        <div class="row">
+                            <span class="col-12 text-balance">Balance Actual</span>
+                            <span class="col-12 text-monto">{{balance?.monto}}</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-12 cont-ntarjeta">
+                <span class="text-tarjeta">{{balance?.idtarjeta}}</span>
+            </div>
+            <div class="col-12 cont-visa">
+                <div class="row">
+                    <div class="col-6" style="text-align: right;">
+                        <div class="row">
+                            <div class="col-12" style=" padding: 0px;"><span class="text-tarjeta text-9 ">Expira</span></div>
+                            <div class="col-12 " style=" padding: 0px; margin-top: -10px; "><span class="text-tarjeta text-10 ">{{balance?.fecha}}</span></div>
+                        </div>
+                    </div>
+                    <div class="col-6 " style="text-align: right;">
+                        <img class="img-responsive " src="assets/visaCuadro.png ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row content-btn">
+            <div class="col-6 teclas-aceptar">
+                <button type="button" (click)="enviarAceptar()" class="btn btn-success">ACEPTAR</button>
+            </div>
+            <div class="col-6 teclas-salir">
+                <button type="button" (click)="enviarSalir()" class="btn btn-danger">SALIR</button>
+            </div>
+        </div>
+    </div>
+</div>

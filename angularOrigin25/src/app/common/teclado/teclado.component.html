@@ -1,0 +1,29 @@
+<div>
+    <div class="row contenedor-input">
+        <input class="form-control" [type]="config?.tipo" [placeholder]="config?.placeholder" [value]="texto" readonly>
+    </div>
+    <div class="row contenedor">
+        <button (click)="obtenerTeclado($event, 1)" type="button" class="btn btn-primary teclas">1</button>
+        <button (click)="obtenerTeclado($event, 2)" type="button" class="btn btn-primary teclas">2</button>
+        <button (click)="obtenerTeclado($event, 3)" type="button" class="btn btn-primary teclas">3</button>
+        <button type="button" class="btn btn-danger teclas-largas">SALIR</button>
+    </div>
+    <div class="row contenedor">
+        <button (click)="obtenerTeclado($event, 4)" type="button" class="btn btn-primary teclas">4</button>
+        <button (click)="obtenerTeclado($event, 5)" type="button" class="btn btn-primary teclas">5</button>
+        <button (click)="obtenerTeclado($event, 6)" type="button" class="btn btn-primary teclas">6</button>
+        <button type="button" (click)="limpiarInput()" class="btn btn-warning teclas-largas">LIMPIAR</button>
+    </div>
+    <div class="row contenedor">
+        <button (click)="obtenerTeclado($event, 7)" type="button" class="btn btn-primary teclas">7</button>
+        <button (click)="obtenerTeclado($event, 8)" type="button" class="btn btn-primary teclas">8</button>
+        <button (click)="obtenerTeclado($event, 9)" type="button" class="btn btn-primary teclas">9</button>
+        <button type="button" (click)="enviarAceptar()" class="btn btn-success teclas-largas">ACEPTAR</button>
+    </div>
+    <div class="row contenedor">
+        <button type="button" class="btn btn-primary teclas">-</button>
+        <button (click)="obtenerTeclado($event, 0)" type="button" class="btn btn-primary teclas">0</button>
+        <button type="button" class="btn btn-primary teclas">+</button>
+        <button type="button" class="btn btn-light teclas-largas"></button>
+    </div>
+</div>

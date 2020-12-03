@@ -1,0 +1,86 @@
+.cont-monto {
+    .text-balance {
+        font-size: 13px;
+        color: #fff;
+        text-align: right;
+    }
+    .text-monto {
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        text-align: right;
+        padding-right: 30px;
+    }
+}
+
+.td-tarjeta {
+    width: 330px;
+    height: 220px;
+    background-color: #8E0349;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 5px;
+    .cont-banco {
+        text-align: left !important;
+        margin-top: 10px;
+        margin-left: 5px;
+        .text-tarjeta {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .cont-visa {
+        .img-responsive {
+            width: 60px;
+        }
+        .text-tarjeta.text-10 {
+            font-size: 10px;
+            color: #fff;
+        }
+        .text-tarjeta.text-9 {
+            font-size: 8px;
+            color: #fff;
+        }
+    }
+    .cont-chip {
+        text-align: left;
+        .img-responsive {
+            width: 50px;
+        }
+        .img-responsive.wifi {
+            width: 40px;
+            transform: rotate(90deg);
+        }
+    }
+    .cont-ntarjeta {
+        .text-tarjeta {
+            color: #A6A2A4;
+            font-weight: bold;
+            font-size: 25px;
+            font-family: Bebas Neue;
+        }
+    }
+}
+
+.contener-atm {
+    margin-top: 20px;
+    text-align: center;
+    .text-atm {
+        font-size: 20px;
+        font-weight: bold;
+        color: #686667;
+    }
+}
+
+.content-btn {
+    padding-top: 25px;
+    .teclas-aceptar {
+        text-align: right;
+    }
+    .teclas-salir {
+        text-align: left;
+    }
+}

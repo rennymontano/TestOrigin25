@@ -1,0 +1,30 @@
+<div class="row contener-atm">
+    <div class="col-4"></div>
+    <div class="col-lg-4 col-lg-offset-4">
+        <span class="text-atm">Transacción</span>
+        <div class="row ticket">
+            <div class="col-12">
+                <img class="img-responsive" src="assets/correcto.png">
+            </div>
+            <div class="col-12">
+                <span class="text-trans">Transacción Exitosa</span>
+            </div>
+            <div class="col-12 cont-monto">
+                <span class="text-retiro">N° Operación:</span>
+                <span class="text-monto">{{movimiento?.noperacion}}</span>
+            </div>
+            <div class="col-12 cont-monto">
+                <span class="text-retiro">Fecha:</span>
+                <span class="text-monto">{{movimiento?.fecha}}</span>
+            </div>
+            <div class="col-12 cont-monto">
+                <span class="text-retiro">Monto retirado:</span>
+                <span class="text-monto">{{movimiento?.monto}}</span>
+            </div>
+            <div class="col-12">
+                <button type="button" (click)="enviarAceptar()" class="btn btn-success teclas-largas">Aceptar</button>
+            </div>
+        </div>
+
+    </div>
+</div>

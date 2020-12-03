@@ -1,0 +1,16 @@
+<div>
+    <div class="row contenedor-dialog">
+        <div class="col-12">
+            <img class="img-responsive" [src]="imagen">
+        </div>
+        <div class="col-12 mensaje">
+            <span>{{mensajes?.mensaje1}}</span>
+        </div>
+        <div class="col-12 mensaje2">
+            <span>{{mensajes?.mensaje2}}</span>
+        </div>
+        <div class="col-12 btn-atras">
+            <button type="button" (click)="regresar()" class="btn btn-light teclas-largas">ATRÁS</button>
+        </div>
+    </div>
+</div>

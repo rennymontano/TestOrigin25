@@ -1,0 +1,42 @@
+.contener-atm {
+    margin-top: 20px;
+    text-align: center;
+    .text-atm {
+        font-size: 20px;
+        font-weight: bold;
+        color: #686667;
+    }
+    .ticket {
+        margin-left: 13%;
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        border: 4px double #686667;
+        .img-responsive {
+            width: 80px;
+        }
+        .text-trans {
+            font-size: 15px;
+            font-weight: 500;
+            color: #686667;
+        }
+        .cont-monto {
+            text-align: left;
+            .text-monto {
+                padding-left: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #686667;
+            }
+            .text-retiro {
+                font-size: 13px;
+                font-weight: 500;
+                color: #686667;
+            }
+        }
+        .teclas-largas {
+            font-size: 15px;
+            margin-top: 40px;
+        }
+    }
+}

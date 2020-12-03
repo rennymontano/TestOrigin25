@@ -1,0 +1,30 @@
+.contenedor {
+    margin-top: 5px;
+    margin-left: 12%;
+    margin-right: 5px;
+    .teclas {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    .teclas-largas {
+        width: 120px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+.contenedor-input {
+    margin-top: 5px;
+    margin-left: 12%;
+    margin-right: 11%;
+    margin-bottom: 10px;
+    input {
+        text-align: center;
+        font-size: 25px;
+    }
+}

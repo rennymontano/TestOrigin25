@@ -1,0 +1,33 @@
+<div class="content-tabla">
+    <div class="text-centrado">
+        <span class="text-atm">Reporte de Movimientos</span>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">N° Tarjeta</th>
+                <th scope="col" class="text-center">Fecha</th>
+                <th scope="col" class="text-right">Cantidad</th>
+                <th scope="col" class="text-right">Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let mov of movimientos">
+                <tr>
+                    <td>{{mov?.idtarjeta}}</td>
+                    <td class="text-center">{{mov?.fecha}}</td>
+                    <td class="text-right">{{mov?.monto}}</td>
+                    <td class="text-right">{{mov?.balance}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+    <div class="row content-btn">
+        <div class="col-6 teclas-aceptar">
+            <button type="button" (click)="enviarAceptar()" class="btn btn-success">ACEPTAR</button>
+        </div>
+        <div class="col-6 teclas-salir">
+            <button type="button" (click)="enviarSalir()" class="btn btn-danger">SALIR</button>
+        </div>
+    </div>
+</div>
